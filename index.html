@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyle Smith Decks</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/script.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+  </script>
+</head>
+
+<body onload="on_load()">
+  <header class="bg-primary text-center">
+    <div class="header split">
+      <div id="logo_container" class="header-left">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </div>
+      <div id="title_container" class="header-center">
+        <span>Lorem, ipsum dolor.</span>
+      </div>
+      <div id="request_quote_btn_container" class="header-right">
+        <div id="request_quote_btn" class="request-quote-btn">request a quote</div>
+      </div>
+    </div>
+    <div id="request_quote_container" class="request-quote-container hidden">
+      <!-- TODO: create a flex layout for the labels and inputs -->
+      <!-- FOR WEB -->
+      <!--         header          -->
+      <!--      label | input      -->
+      <!--      label | input      -->
+      <!--      button button      -->
+      <!-- FOR MOBILE -->
+      <!--    header      -->
+      <!--     label     -->
+      <!--     input     -->
+      <!--     label     -->
+      <!--     input     -->
+      <!-- button button -->
+       
+      <div class="request-quote-container-grid">
+        <div class="request-quote-grid-0">
+          <h2 class="request-quote-header">Request a quote</h2>
+        </div>
+        <div class="request-quote-grid-1 align-right">
+          <label for="fname">First name:</label>
+        </div>
+        <div class="request-quote-grid-2 align-left">
+          <input type="text" id="fname" name="fname" alt="first name" value="">
+        </div>
+        <div class="request-quote-grid-3 align-right">
+          <label for="lname">Last name:</label></div>
+        <div class="request-quote-grid-4 align-left">
+          <input type="text" id="lname" name="lname" alt="last name" value="">
+        </div>
+        <div class="request-quote-grid-5 align-right">
+          <label for="email">Email:</label></div>
+        <div class="request-quote-grid-6 align-left">
+          <input type="email" id="email" name="email" alt="email" value="">
+        </div>
+        <div class="request-quote-grid-7 align-right">
+          <label for="select_deck_type">Deck type:</label>
+        </div>
+        <div class="request-quote-grid-8 align-left">
+          <select id="select_deck_type">
+            <option value="hard wood">Hard wood</option>
+            <option value="other wood">Other wood</option>
+            <option value="composite">Composite</option>
+          </select>
+        </div>
+        <div class="request-quote-grid-9 align-right">
+          <label for="details">Details:</label>
+        </div>
+        <div class="request-quote-grid-10 align-left">
+          <textarea id="details" name="details"></textarea>
+        </div>
+        <div class="request-quote-grid-11">
+          <input type="button" value="Send" class="request-quote-submit-btn" onclick="sendEmail()" />
+          <input type="button" value="Close" class="" onclick="clear_request_form(false)" />
+        </div>
+      </div>
+      <div id="email_submit_msg_pass" class="email-submit-msg pass hidden"></div>
+      <div id="email_submit_msg" class="email-submit-msg fail hidden"></div>
+    </div>
+  </header>
+
+  <section class="first-div bg-light text-center">
+    <div class="container container--narrow">
+      <p>Lorem, ipsum dolor.</p>
+      <h2>Responsive layouts don’t have to be a struggle</h2>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="text-center">Quality Designs</h2>
+      <div class="split">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores dolorem
+            nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores dolorem
+            nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+        </div>
+        <div>
+          <p>Eum quisquam deleniti facere fugit. Vero quidem sunt fuga fugit ea voluptatum placeat ullam eveniet,
+            minima
+            sed veritatis laboriosam. Quia cumque est cupiditate quod eum?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="content"></div>
+  <!-- <hr>
+  <section class="bg-dark">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Hardwood</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam! Officiis?</p>
+        </div>
+        <div id="img_carousel_hardwood" class="air-slider"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary">
+    <div class="container">
+      <div class="split">
+        <div id="img_carousel_softwood" class="air-slider"></div>
+        <div>
+          <h2>Softwood</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id hic at vel voluptatem reiciendis
+            aut,
+            esse aperiam? Quia aperiam nesciunt sint iste laboriosam quibusdam minus molestias blanditiis esse!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Composite</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam! Officiis?</p>
+        </div>
+        <div id="img_carousel_composite" class="air-slider"></div>
+      </div>
+    </div>
+  </section> -->
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+{
+  "main": {
+    "email_details": {
+      "secure_token": "12bd2168-f436-48b3-a3e1-b22a12e964ab",
+      "from": "General Specific <genspec1@gmail.com>",
+      "to": "julian.inskip@gmail.com",
+      "subject": "Request for quote from: "
+    }
+  },
+  "request_quote": {
+    "title": "Request a quore",
+    "request_items": [
+      {
+        "label": "First name",
+        "id": "fname",
+        "type": "text"
+      },
+      {
+        "label": "Last name",
+        "id": "lname",
+        "type": "text"
+      },
+      {
+        "label": "Email",
+        "id": "email",
+        "type": "email"
+      },
+      {
+        "label": "Deck type",
+        "id": "lname",
+        "type": "dropdown",
+        "options": [
+          {
+            "value": "hard wood",
+            "title": "Hard wood"
+          },
+          {
+            "value": "soft wood",
+            "title": "Soft wood"
+          },
+          {
+            "value": "composite",
+            "title": "Composite"
+          }
+        ]
+      },
+      {
+        "label": "Details",
+        "id": "details",
+        "type": "textarea"
+      }
+    ]
+  },
+  "categories": {
+    "Hardwood": {
+      "class": "bg-dark",
+      "img_side": "right",
+      "summary": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam! Officiis?",
+      "description": "",
+      "carousel-images": {
+        "bridge-3024773__340": {
+          "filename": "img\\carousel\\Hardwood\\bridge-3024773__340.jpg"
+        },
+        "floor-1256804__340": {
+          "filename": "img\\carousel\\Hardwood\\floor-1256804__340.jpg"
+        },
+        "lumber-84678__340": {
+          "filename": "img\\carousel\\Hardwood\\lumber-84678__340.jpg"
+        },
+        "wood-1776060__480": {
+          "filename": "img\\carousel\\Hardwood\\wood-1776060__480.jpg"
+        },
+        "wood-591631__340": {
+          "filename": "img\\carousel\\Hardwood\\wood-591631__340.jpg"
+        }
+      }
+    },
+    "Softwood": {
+      "class": "bg-primary",
+      "img_side": "left",
+      "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id hic at vel voluptatem reiciendis aut, esse aperiam? Quia aperiam nesciunt sint iste laboriosam quibusdam minus molestias blanditiis esse!",
+      "description": "",
+      "carousel-images": {
+        "autumn-3193305__340": {
+          "filename": "img\\carousel\\Softwood\\autumn-3193305__340.jpg"
+        },
+        "forest-3082836__340": {
+          "filename": "img\\carousel\\Softwood\\forest-3082836__340.jpg"
+        },
+        "tree-3137482__340": {
+          "filename": "img\\carousel\\Softwood\\tree-3137482__340.jpg"
+        },
+        "trees-3410836__340": {
+          "filename": "img\\carousel\\Softwood\\trees-3410836__340.jpg"
+        },
+        "wood-3095720__340": {
+          "filename": "img\\carousel\\Softwood\\wood-3095720__340.jpg"
+        }
+      }
+    },
+    "Composite": {
+      "class": "bg-dark",
+      "img_side": "right",
+      "summary": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam! Officiis?",
+      "description": "",
+      "carousel-images": {
+        "benches-560435__340": {
+          "filename": "img\\carousel\\Composite\\benches-560435__340.jpg"
+        },
+        "cello-2830670__340": {
+          "filename": "img\\carousel\\Composite\\cello-2830670__340.jpg"
+        },
+        "club-2492011__340": {
+          "filename": "img\\carousel\\Composite\\club-2492011__340.jpg"
+        },
+        "kitchen-2165756__340": {
+          "filename": "img\\carousel\\Composite\\kitchen-2165756__340.jpg"
+        }
+      }
+    }
+  }
+}
